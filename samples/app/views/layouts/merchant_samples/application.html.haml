@@ -9,11 +9,13 @@
     / Le HTML5 shim, for IE6-8 support of HTML elements
     /[if lt IE 9]
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
-    = stylesheet_link_tag    "merchant_samples/application", :media => "all"
+      <link rel="stylesheed" type="text/css" href="https://paypal-sdk-samples.herokuapp.com/assets/merchant_samples/application-f4fb3075a36403186f284615c8f91cbb.css">
+    -# = stylesheet_link_tag    "merchant_samples/application", :media => "all"
   %body
     = render "header"
     .container
       .row
         .span2= render "sidebar"
         .span10= yield
-    = javascript_include_tag "merchant_samples/application"
+    <script src="https://paypal-sdk-samples.herokuapp.com/assets/merchant_samples/application-a00352d91a0b60e0360b8802fa86e822.js" type="text/javascript"></script>
+    -# = javascript_include_tag "merchant_samples/application"
